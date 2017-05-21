@@ -20,10 +20,6 @@ public class AndroidHTTPConnection {
             string = reader.readLine();
         }
 
-
-
-        //A bad web address
-
         //Invalid web site address
         try{
             URL slickdeals2 = new URL("https://www.slickdeals.com/");
@@ -33,21 +29,13 @@ public class AndroidHTTPConnection {
         } catch (Exception e){
         System.out.println("Invalid web address");
         }
-
-
-
-        //NASTY PATH
-
-        //nothing is printed because there is no loop to read the entire thing
+        
+        //nothing is printed because there isn't a loop
         URL steepCheap = new URL("http://www.steepandcheap.com/");
         URLConnection connection3 = steepCheap.openConnection();
         BufferedReader reader3 = new BufferedReader(new InputStreamReader(connection3.getInputStream()));
         String string3 = reader3.readLine();
         System.out.println(string3);
-
-
-
-        //NASTY PATH
 
         //bad extension
         try {
@@ -57,10 +45,6 @@ public class AndroidHTTPConnection {
         } catch (Exception e){
             System.out.println("This is not a valid web extension");
         }
-
-
-
-        //NASTY PATH
 
         //null as website
         try {
@@ -74,4 +58,3 @@ public class AndroidHTTPConnection {
             System.out.println("Null was entered.");
         }
 }}
-//null as website
