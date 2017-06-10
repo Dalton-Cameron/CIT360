@@ -1,5 +1,5 @@
 package test;
-
+//This is code that shows how runnables work. 
 class MyRunnableThread implements Runnable{
 	 
     public static int myCount = 0;
